@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    z-index: 3;
+    background: rgb(141, 167, 226);
+    color: #fff;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between; /* Changed from center to space-between */
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start; /* Changed from space-between to flex-start */
+    align-items: center;
+  }
+  
+  .project-name {
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-right: 1em; /* Space between project name and welcome message */
+  }
+  
+  .welcome-message {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .logout-container {
+    display: flex;
+    align-items: center;
+    margin-left: 800px; /* Changed from auto to 0 */
+    margin-right: auto; /* Add this to push the container to the left */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .notification-icon {
+    position: relative;
+    margin-right: 0.5em;
+    padding-right: 1.5em; /* Reduced margin */
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -0.5em;
+    right: 0.8em;
+    background-color: #f00;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+  }
+  
+  button {
+    background: none;
+    font-size: larger;
+    color: #fff;
+    border: none;
+    padding-top: 0.25em; 
+    padding-bottom: 0.25em; 
+    cursor: pointer;
+}
+
+.home-button, .login-button, .signup-button, .logout-button {
+  padding-right: 20px;
+}
+  
+  .sidebar {
+    margin-top: 80px;
+    z-index: 1;
+    background: linear-gradient(#86A8E7, #e9a0f1, #9b57bd);
+    padding: 1em;
+    width: 200px;
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    font-size: 23px;
+    list-style: none;
+    padding-left: 0px;
+    padding-left: 32%;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.5em;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  main {
+    flex: 1; 
+    margin-left: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  #users-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #users-list li {
+    margin-bottom: 0.5em;
+  }
+  
+  .view-profile-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+
+  .user-table {
+    margin-top: 20px;
+    width: 100%; 
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .user-table button {
+    padding: 6px 12px;
+    background-color: #328ced;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .user-table button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Font Awesome icon adjustment if needed */
+  .fas {
+    font-size: 1.7em;
+    color: #fff; 
+  }
+
+  
