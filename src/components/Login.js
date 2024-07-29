@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaLock } from "react-icons/fa";
 import '../Login.css';
 
+
 const Login = () => {
     const [action, setAction] = useState('');
     const navigate = useNavigate();
@@ -43,8 +44,7 @@ const Login = () => {
                     
 
                     <div className="register-link">
-                        <p>Don't have an account? <Link to="/signup" onClick={registerLink}>Register</Link></p>
-                        <p>Want To Get Back? <Link to="/" onClick={homeLink}>Home</Link></p>
+                        <p>Don't have an account? <a href="#" onClick={registerLink}>Register</a></p>
                     </div>
                 </form>
             </div>
