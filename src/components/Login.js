@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { FaUser, FaLock } from "react-icons/fa";
 import '../Login.css';
 
+
 const Login = () => {
 
     const [action, setAction] = useState('');
@@ -32,7 +33,7 @@ const Login = () => {
                     <button type="submit">Login</button>
 
                     <div className="register-link">
-                        <p>Don't have an account? <a href="#" onClick={registerLink}>Register</a></p>
+                        <p>Don't have an account? <Link to="/signup" onClick={registerLink}>Register</Link></p>
                     </div>
                 </form>
             </div>
